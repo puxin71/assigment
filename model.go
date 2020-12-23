@@ -20,11 +20,3 @@ type Recording struct {
 	// Videio content
 	Data []byte
 }
-
-type ByCreatedAt []Recording
-
-func (a ByCreatedAt) len() int      { return len(a) }
-func (a ByCreatedAt) Swap(i, j int) { a[i], a[j] = a[j], a[i] }
-
-// Sort the recording list by the descending order of the CreatedAt time
-func (a ByCreatedAt) Less(i, j int) bool { return a[i].CreatedAt.After(a[j].CreatedAt) }
