@@ -8,3 +8,4 @@ If I have more time, I would have:
 - took a simple assumption on reporting the video length as the time taken to upload the file, which may not be correct
 - took a simple approach to treat the video file as a small file which can fit into the memory. Normally it needs to be uploaded in multi-part form
 - did not consider the time in UTC for simplification
+- did not optimize the memory footprint for the video files when implementing the GetAll API
